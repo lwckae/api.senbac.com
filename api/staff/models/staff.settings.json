@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "staff"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "startworking": {
+      "type": "date"
+    },
+    "passportid": {
+      "type": "string",
+      "unique": true
+    },
+    "passportvalidate": {
+      "type": "date"
+    },
+    "passportexpired": {
+      "type": "date"
+    },
+    "passportrelease": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "staff"
+}
