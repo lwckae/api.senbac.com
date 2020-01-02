@@ -1,0 +1,18 @@
+{
+  "info": {
+    "name": "position"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "positions"
+}

@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "server"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "hostname": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "password"
+    },
+    "port": {
+      "type": "integer",
+      "default": 22,
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "servers"
+}
