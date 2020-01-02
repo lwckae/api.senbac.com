@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "staff",
   "info": {
     "name": "staff"
   },
@@ -37,8 +39,14 @@
     },
     "passportrelease": {
       "type": "string"
+    },
+    "positions": {
+      "collection": "position",
+      "via": "staff"
+    },
+    "sshpublickey": {
+      "type": "text",
+      "unique": true
     }
-  },
-  "connection": "default",
-  "collectionName": "staff"
+  }
 }

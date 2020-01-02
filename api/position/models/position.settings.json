@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "positions",
   "info": {
     "name": "position"
   },
@@ -11,8 +13,10 @@
       "type": "string",
       "unique": true,
       "required": true
+    },
+    "staff": {
+      "via": "positions",
+      "model": "staff"
     }
-  },
-  "connection": "default",
-  "collectionName": "positions"
+  }
 }
